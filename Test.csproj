@@ -281,6 +281,9 @@
     <Reference Include="SampleClassLibrary">
       <HintPath>Assets/JsonDotNet/Examples/Tests/TestModels/SampleClassLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Aliyun.OSS">
+      <HintPath>Assets/Plugins/Aliyun.OSS.dll</HintPath>
+    </Reference>
     <Reference Include="I18N.CJK">
       <HintPath>Assets/Plugins/I18N.CJK.dll</HintPath>
     </Reference>
@@ -320,13 +323,8 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/10102/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="Aliyun.OSS">
-      <HintPath>Assets/Plugins/Aliyun.OSS.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimationStage.cs" />
-    <Compile Include="Assets\HandPool.cs" />
     <Compile Include="Assets\JsonDotNet\DataStructures\SerializableGuid.cs" />
     <Compile Include="Assets\JsonDotNet\Examples\Serialization\1-BasicSerialization\JNSimpleObjectSample.cs" />
     <Compile Include="Assets\JsonDotNet\Examples\Serialization\2-Polymorphism\JNPolymorphismSample.cs" />
@@ -877,17 +875,6 @@
     <Compile Include="Assets\MyScripts\TestRightHand.cs" />
     <Compile Include="Assets\MyScripts\TimeCountDown.cs" />
     <Compile Include="Assets\MyScripts\TrainingPlan.cs" />
-    <Compile Include="Assets\Panel.cs" />
-    <Compile Include="Assets\PlayScript.cs" />
-    <Compile Include="Assets\RecordScript.cs" />
-    <Compile Include="Assets\ReplayEntity.cs" />
-    <Compile Include="Assets\ReplayManager.cs" />
-    <Compile Include="Assets\ReplayObject.cs" />
-    <Compile Include="Assets\ReplayObjectState.cs" />
-    <Compile Include="Assets\ReplayParentObject.cs" />
-    <Compile Include="Assets\ReplayProgress.cs" />
-    <Compile Include="Assets\ReplaySaveData.cs" />
-    <Compile Include="Assets\ReplaySystemDefine.cs" />
     <Compile Include="Assets\Scripts\Admin.cs" />
     <Compile Include="Assets\Scripts\AdminUI.cs" />
     <Compile Include="Assets\Scripts\Doctor.cs" />
@@ -895,7 +882,6 @@
     <Compile Include="Assets\Scripts\MysqlConnect.cs" />
     <Compile Include="Assets\Scripts\Patient.cs" />
     <Compile Include="Assets\Scripts\PatientUI.cs" />
-    <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\UIScripts\AdminStartPanel.cs" />
     <Compile Include="Assets\UIScripts\DoctorCheckPatientPanel.cs" />
     <Compile Include="Assets\UIScripts\DoctorCheckPlanPanel.cs" />
@@ -906,7 +892,6 @@
     <Compile Include="Assets\UIScripts\PatientStartPanel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\AssetsentityStateData.txt" />
     <None Include="Assets\JsonDotNet\ReadMe.txt" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />

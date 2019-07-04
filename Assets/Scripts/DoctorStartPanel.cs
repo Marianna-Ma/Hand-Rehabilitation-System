@@ -6,6 +6,7 @@ public class DoctorStartPanel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
         gameObject.SetActive(true);
         Debug.Log("医生初始界面打开了");
 	}

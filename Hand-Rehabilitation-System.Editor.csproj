@@ -307,11 +307,24 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/Marianna/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.UnityShim">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
+    </Reference>
+    <Reference Include="sfw.net">
+      <HintPath>Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Hand-Rehabilitation-System.csproj">
       <Project>{5FEE21AB-2190-64CE-584B-91C2B77F34B9}</Project>
       <Name>Hand-Rehabilitation-System</Name>
+    </ProjectReference>
+    <ProjectReference Include="Hand-Rehabilitation-System.Editor.Plugins.csproj">
+      <Project>{56C9F575-8370-DC63-7539-724B103D6FBF}</Project>
+      <Name>Hand-Rehabilitation-System.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -378,6 +391,8 @@
     <None Include="Assets\LeapMotion\Core\Shaders\VertexOffsetShader.shader" />
     <None Include="Assets\LeapMotion\Core\Version.txt" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
     <None Include="Assets\TextFile\File.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

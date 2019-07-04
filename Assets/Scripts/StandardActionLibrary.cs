@@ -32,10 +32,12 @@ public class StandardActionLibrary : MonoBehaviour {
     // Use this for initialization
     void Start () {
         mysql = new MySqlAccess(host, port, userName, password, databaseName);
+        Debug.Log("==================================================================");
         //string next_id = getActionId();
         //Debug.Log("neext iiiid: " + next_id);
 
-        //saveStandardAction(next_id, "0");
+
+        //saveStandardAction("400007", "1");
         //-----------------------删除动作--------------------------
         //deleteStandardAction("400011");
 
@@ -58,10 +60,11 @@ public class StandardActionLibrary : MonoBehaviour {
         //saveStandardAction("400001", "0");
         //Debug.Log("out....next");
         //saveStandardAction(next_id, "1");
-        //addStandardAction(next_id, "拇指屈曲", "F:/115 - Learning - 暑期实训/大三/001_标准动作库/actionsPic/1_拇指屈曲.png");
+        addStandardAction("400007", "握拳", "F:/115 - Learning - 暑期实训/大三/001_标准动作库/actionsPic/7_屈指.png");
 
         //----------------------下载图片--------------------------
         //downloadPicture("400011.jpg");
+        Debug.Log("===================================================================");
     }
 
 
@@ -125,6 +128,14 @@ public class StandardActionLibrary : MonoBehaviour {
         OSSConnect.DownLoadFile(objectName, filePath);
     }
 
+    public static void downloadActions(string actName)
+    {
+        string objectName = "standard_actions/" + actName;
+        string filePath = Application.dataPath + "/StandardActionLibrary/" + actName;
+        Debug.Log("filePath: " + filePath);
+        OSSConnect.DownLoadFile(objectName, filePath);
+    }
+
     public void deletePicture(string picName)
     {
         string objectName = "standard_pictures/" + picName;
@@ -154,7 +165,7 @@ public class StandardActionLibrary : MonoBehaviour {
         //Debug.Log("next_pic: " + next_pic + " next left: " + next_left + " next right: " + next_right);
         mysql.SimpleSql(querySql);
         mysql.Close();
-        
+        Debug.Log("Save already!");
     }
 
     //查
@@ -285,7 +296,7 @@ public class StandardActionLibrary : MonoBehaviour {
     public void saveStandardAction(string hand_id, string handtype)
     {
         Debug.Log("flag_S: " + flag_S);
-        path = "/Datas/" + hand_id + handtype + ".json";
+        path = "/StandardActionLibrary/" + hand_id + handtype + ".json";
         flag_S = 1;
         allowSaveData = true;
         

@@ -14,7 +14,7 @@ public class CreatePlanTable : MonoBehaviour {
         plandata.SetActive(false);
         for (int i = 0; i < 20; i++)//添加并修改预设的过程，将创建10行
         {
-            Debug.Log(i);
+            //Debug.Log(i);
             //在Table下创建新的预设实例
             GameObject row = GameObject.Instantiate(PlanData_Prefab, table.transform.position, table.transform.rotation) as GameObject;
             row.name = "plan" + (i + 1);

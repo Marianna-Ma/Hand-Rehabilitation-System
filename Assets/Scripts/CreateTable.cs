@@ -9,12 +9,24 @@ public class CreateTable : MonoBehaviour {
 
     void Start()
     {
+       
+    }
+
+
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    private void OnEnable()
+    {
+        /*
         GameObject table = GameObject.Find("Canvas/DoctorCheckPatientPanel/ScrollView/Viewport/Content");
         GameObject patientdata = GameObject.Find("Canvas/DoctorCheckPatientPanel/ScrollView/Viewport/Content/PatientData");
         patientdata.SetActive(false);
         for (int i = 0; i < 20; i++)//添加并修改预设的过程，将创建10行
         {
-            Debug.Log(i);
+            //Debug.Log(i);
             //在Table下创建新的预设实例
             //GameObject table = GameObject.Find("Canvas/DoctorCheckPatientPanel/ScrollView/Viewport/Content");
             //Debug.Log(table.name);
@@ -26,13 +38,6 @@ public class CreateTable : MonoBehaviour {
             row.transform.Find("PatientID").GetComponent<Text>().text = "ID:" + (i + 1);
             row.transform.Translate(0, i * 30, 0);
         }
+        */
     }
-
-
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
 }

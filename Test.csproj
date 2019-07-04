@@ -323,6 +323,21 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/10102/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Unity.45">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.UnityShim">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Api.45">
+      <HintPath>Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
+    </Reference>
+    <Reference Include="sfw.net">
+      <HintPath>Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\JsonDotNet\DataStructures\SerializableGuid.cs" />
@@ -845,6 +860,8 @@
     <Compile Include="Assets\LeapMotion\Modules\Hands\Scripts\PolyFinger.cs" />
     <Compile Include="Assets\LeapMotion\Modules\Hands\Scripts\PolyHand.cs" />
     <Compile Include="Assets\Scripts\Admin.cs" />
+    <Compile Include="Assets\Scripts\AdminChangeStandardActionPanel.cs" />
+    <Compile Include="Assets\Scripts\AdminDeleteDoctorPanel.cs" />
     <Compile Include="Assets\Scripts\Administrator.cs" />
     <Compile Include="Assets\Scripts\AdminStartPanel.cs" />
     <Compile Include="Assets\Scripts\AdminUI.cs" />
@@ -854,6 +871,8 @@
     <Compile Include="Assets\Scripts\DataControlledRightHand.cs" />
     <Compile Include="Assets\Scripts\demoshow.cs" />
     <Compile Include="Assets\Scripts\Doctor.cs" />
+    <Compile Include="Assets\Scripts\DoctorAddPatientPanel.cs" />
+    <Compile Include="Assets\Scripts\DoctorChangeInfoPanel.cs" />
     <Compile Include="Assets\Scripts\DoctorCheckPatientPanel.cs" />
     <Compile Include="Assets\Scripts\DoctorCheckPlanPanel.cs" />
     <Compile Include="Assets\Scripts\DoctorPatientPanel.cs" />
@@ -877,8 +896,12 @@
     <Compile Include="Assets\Scripts\PanelInstance.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\Patient.cs" />
+    <Compile Include="Assets\Scripts\PatientChangeInfoPanel.cs" />
+    <Compile Include="Assets\Scripts\PatientHistoryRecordPanel.cs" />
     <Compile Include="Assets\Scripts\PatientStartPanel.cs" />
+    <Compile Include="Assets\Scripts\PatientTrainPanel.cs" />
     <Compile Include="Assets\Scripts\PatientUI.cs" />
+    <Compile Include="Assets\Scripts\PatientUpdatePasswordPanel.cs" />
     <Compile Include="Assets\Scripts\ReplayObject.cs" />
     <Compile Include="Assets\Scripts\ReplayScript.cs" />
     <Compile Include="Assets\Scripts\SaveHandData.cs" />
@@ -903,6 +926,8 @@
     <None Include="Assets\LeapMotion\Core\Shaders\VertexOffsetShader.shader" />
     <None Include="Assets\LeapMotion\Core\Version.txt" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\credits.txt" />
+    <None Include="Assets\Plugins\GitHub\Editor\eula.txt" />
     <None Include="Assets\TextFile\File.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

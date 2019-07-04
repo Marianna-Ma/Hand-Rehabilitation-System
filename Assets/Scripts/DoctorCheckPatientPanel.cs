@@ -26,6 +26,6 @@ public class DoctorCheckPatientPanel : MonoBehaviour {
 
     public void ClickBackButton()
     {
-        GameObject.Find("Canvas").GetComponent<MainMenuManager>().OpenPanelByName("DoctorDeletePatientPanel");
+        GameObject.Find("Canvas").GetComponent<MainMenuManager>().OpenPanelByName("DoctorStartPanel");
     }
 }

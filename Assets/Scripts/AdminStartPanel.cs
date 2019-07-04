@@ -14,6 +14,12 @@ public class AdminStartPanel : MonoBehaviour {
 		
 	}
 
+    //跳转到修改个人信息界面
+    public void ClickAdminChangeInfoButton()
+    {
+        GameObject.Find("Canvas").GetComponent<MainMenuManager>().OpenPanelByName("AdminChangeInfoPanel");
+    }
+
     //跳转到医生管理界面
     public void ClickAdminDoctorButton()
     {

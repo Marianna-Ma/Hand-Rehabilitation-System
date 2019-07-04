@@ -6,7 +6,7 @@ public class PatientStartPanel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gameObject.SetActive(false);
+        
 	}
 	
 	// Update is called once per frame
@@ -23,8 +23,8 @@ public class PatientStartPanel : MonoBehaviour {
     //跳转至训练界面
     public void ClickPatientStartButton()
     {
-        GameObject.Find("leftHand").SetActive(true);
-        GameObject.Find("rightHand").SetActive(true);
+        //GameObject.Find("leftHand").SetActive(true);
+        //GameObject.Find("rightHand").SetActive(true);
         GameObject.Find("Canvas").GetComponent<MainMenuManager>().OpenPanelByName("PatientTrainPanel");
 
     }
